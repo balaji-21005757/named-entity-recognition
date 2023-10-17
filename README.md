@@ -104,11 +104,7 @@ X1 = [[word2idx[w[0]] for w in s] for s in sentences]
 ```
 ## Padding:
 ```
-nums = [[1], [2, 3], [4, 5, 6]]
-sequence.pad_sequences(nums)
 
-nums = [[1], [2, 3], [4, 5, 6]]
-sequence.pad_sequences(nums,maxlen=2)
 
 X = sequence.pad_sequences(maxlen=max_len,
                   sequences=X1, padding="post",
